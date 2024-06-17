@@ -70,9 +70,9 @@ class MyApp extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
+                    children: [
                       Button(
                         text: 'Transfer',
                         bgColor: Colors.amber,
@@ -80,19 +80,19 @@ class MyApp extends StatelessWidget {
                       ),
                       Button(
                         text: 'Request',
-                        bgColor: const Color(0xFF1F2123),
+                        bgColor: Color(0xFF1F2123),
                         textColor: Colors.white,
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         'Wallets',
                         style: TextStyle(
                             color: Colors.white,
@@ -117,26 +117,23 @@ class MyApp extends StatelessWidget {
                     amount: '6 428',
                     icon: Icons.euro_rounded,
                     isInverted: false,
+                    offset: Offset(0, 0),
                   ),
-                  Transform.translate(
-                    offset: const Offset(0, -20),
-                    child: const CurrencyCard(
-                      name: 'Bitcoin',
-                      code: 'BTC',
-                      amount: '9 785',
-                      icon: Icons.currency_bitcoin,
-                      isInverted: true,
-                    ),
+                  const CurrencyCard(
+                    name: 'Bitcoin',
+                    code: 'BTC',
+                    amount: '9 785',
+                    icon: Icons.currency_bitcoin,
+                    isInverted: true,
+                    offset: Offset(0, -20),
                   ),
-                  Transform.translate(
-                    offset: const Offset(0, -40),
-                    child: const CurrencyCard(
-                      name: 'Dollar',
-                      code: 'USD',
-                      amount: '428',
-                      icon: Icons.attach_money_outlined,
-                      isInverted: false,
-                    ),
+                  const CurrencyCard(
+                    name: 'Dollar',
+                    code: 'USD',
+                    amount: '428',
+                    icon: Icons.attach_money_outlined,
+                    isInverted: false,
+                    offset: Offset(0, -40),
                   ),
                 ],
               ),
