@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:myfirst/models/webtoon_episode_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/webtoon_detail_model.dart';
+import '../models/webtoon_episode_model.dart';
 import '../services/api_service.dart';
 import '../widgets/episode_widget.dart';
 
